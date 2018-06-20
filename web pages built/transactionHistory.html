@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style>
+        #pending{
+            background-color: coral;
+        }
+        #accepted{
+            background-color: greenyellow;
+        }
+        #rejected{
+            background-color: #CD5555;
+        }
+        #footer{
+            border-top: solid gray 3px;
+            text-align: center;
+            margin-left: -60px;
+            margin-right: -60px;
+            padding-top: 10px;
+        }
+    </style>
+    <title>Applications</title>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand">Summer School Student Information System</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#">Apply To Summer School</a></li>
+            <li><a href="#">View Your Applications</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-edit"></span> Edit Your Profile Details</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Logged in as Paul Jones</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <h1 style="text-align: center;">Your Previous Transactions<br /> <small>This page displays the payment details of your previous transactions.</small></h1>
+    <br />
+
+    <div class="row">
+       <div class="col-md-3">
+           <div class="well well-basic">
+               <h2>Redwood Summer School</h2>
+               <p>
+                   <strong>Amount Paid: </strong>$190.00<br />
+                   <strong>Date of Payment: </strong>04/05/2016<br />
+                   <strong>Payment method: </strong>Visa Debit<br />
+                   <strong>Transaction Notes: </strong> No Notes
+               </p>
+           </div>
+       </div>
+    </div>
+    <div class="row" id="footer">
+        <p><i>Random footer information<br />
+            contacts, address,<br />
+            disclaimer and other footer information ...etc.
+        </i></p>
+    </div>
+
+</div>
+
+
+
+</body>
+</html>

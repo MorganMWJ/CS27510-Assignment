@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style>
+        #pending{
+            background-color: coral;
+        }
+        #accepted{
+            background-color: greenyellow;
+        }
+        #rejected{
+            background-color: #CD5555;
+        }
+        #footer{
+            border-top: solid gray 3px;
+            text-align: center;
+            margin-left: -60px;
+            margin-right: -60px;
+            padding-top: 10px;
+        }
+    </style>
+    <title>New Account</title>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand">Summer School Student Information System</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#">Apply To Summer School</a></li>
+            <li><a href="#">View Your Applications</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-edit"></span> Edit Your Profile Details</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Logged in as Paul Jones</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <h1 style="text-align: center;">Your Accepted, Well Done!<br /> <small>Enter your passport information and payment details for our records and your reference.</small></h1>
+    <br />
+    <div class="row">
+        <div class="col-md-12">
+            <div style="text-align: center;" class="alert alert-success">
+                    <h2>Success! You have payed and confirmed attendance to:</h2><h2><br /><strong>Redwood Summer School</strong></h2>
+            </div>
+        </div>
+
+
+        <div style="text-align: center;margin-bottom: 20px;" class="row">
+            <button type="button" class="btn btn-primary">Return to your applications page</button>
+        </div>
+
+
+        <div class="row" id="footer">
+            <p><i>Random footer information<br />
+                contacts, address,<br />
+                disclaimer and other footer information ...etc.
+            </i></p>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>

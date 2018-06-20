@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style>
+        #pending{
+            background-color: coral;
+        }
+        #accepted{
+            background-color: greenyellow;
+        }
+        #rejected{
+            background-color: #CD5555;
+        }
+        #footer{
+            border-top: solid gray 3px;
+            text-align: center;
+            margin-left: -60px;
+            margin-right: -60px;
+            padding-top: 10px;
+        }
+    </style>
+    <title>School Applications</title>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand">Summer School Student Information System</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#">View Your Schools Applications</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-edit"></span> Edit Your School Details</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Logged in as Leader: user23</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <h1 style="text-align: center;">Applications To Your School<br /> <small>This page displays applications to your summer school.</small></h1>
+    <br />
+
+    <div style="margin-bottom: 10px;" class="row">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#">Unevaluated Applications</a></li>
+            <li><a href="#">Accepted Applications</a></li>
+            <li><a href="#">Declined Applications</a></li>
+            <li><a href="#">Confirmed Students</a></li>
+        </ul>
+        <span class="glyphicon glyphicon-search"></span> <input type="text">
+    </div>
+
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading" id="pending">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><strong>user: </strong> user345 <strong>Name: </strong> Paul Jones <strong>Status: </strong> Unevaluated    </a>
+                    <button type="button" class="btn btn-link"><strong>-</strong></button>
+                    <button type="button" onclick="myFunction()" id="cancelButton" class="btn btn-success pull-right">Click to accept application.</button>
+                    <button type="button" onclick="myFunction()" id="cancelButton" class="btn btn-danger pull-right">Click to reject application.</button>
+                    <script>
+                        function myFunction() {
+                            confirm("Are you sure you want to permanently cancel/remove this application?");
+                        }
+                    </script>
+                </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse in">
+                <div class="panel-body">...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...</div>
+                <div id="pending" class="panel-footer"><button type="submit" class="btn btn-default">Click here to view this students information</button></div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" id="pending">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><strong>user: </strong> user345 <strong>Name: </strong> Paul Jones <strong>Status: </strong> Unevaluated    </a>
+                    <button type="button" class="btn btn-link"><strong>-</strong></button>
+                    <button type="button" onclick="myFunction()" id="cancelButton" class="btn btn-success pull-right">Click to accept application.</button>
+                    <button type="button" onclick="myFunction()" id="cancelButton" class="btn btn-danger pull-right">Click to reject application.</button>
+                    <script>
+                        function myFunction() {
+                            confirm("Are you sure you want to permanently cancel/remove this application?");
+                        }
+                    </script>
+                </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse in">
+                <div class="panel-body">...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...</div>
+                <div id="pending" class="panel-footer"><button type="submit" class="btn btn-default">Click here to view this students information</button></div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" id="pending">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><strong>user: </strong> user345 <strong>Name: </strong> Paul Jones <strong>Status: </strong> Unevaluated    </a>
+                    <button type="button" class="btn btn-link"><strong>-</strong></button>
+                    <button type="button" onclick="myFunction()" id="cancelButton" class="btn btn-success pull-right">Click to accept application.</button>
+                    <button type="button" onclick="myFunction()" id="cancelButton" class="btn btn-danger pull-right">Click to reject application.</button>
+                    <script>
+                        function myFunction() {
+                            confirm("Are you sure you want to permanently cancel/remove this application?");
+                        }
+                    </script>
+                </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse in">
+                <div class="panel-body">...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...</div>
+                <div id="pending" class="panel-footer"><button type="submit" class="btn btn-default">Click here to view this students information</button></div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" id="pending">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse4"><strong>user: </strong> user345 <strong>Name: </strong> Paul Jones <strong>Status: </strong> Unevaluated    </a>
+                    <button type="button" class="btn btn-link"><strong>-</strong></button>
+                    <button type="button" onclick="myFunction()" id="cancelButton" class="btn btn-success pull-right">Click to accept application.</button>
+                    <button type="button" onclick="myFunction()" id="cancelButton" class="btn btn-danger pull-right">Click to reject application.</button>
+                    <script>
+                        function myFunction() {
+                            confirm("Are you sure you want to permanently cancel/remove this application?");
+                        }
+                    </script>
+                </h4>
+            </div>
+            <div id="collapse4" class="panel-collapse collapse in">
+                <div class="panel-body">...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...</div>
+                <div id="pending" class="panel-footer"><button type="submit" class="btn btn-default">Click here to view this students information</button></div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" id="pending">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse5"><strong>user: </strong> user345 <strong>Name: </strong> Paul Jones <strong>Status: </strong> Unevaluated    </a>
+                    <button type="button" class="btn btn-link"><strong>-</strong></button>
+                    <button type="button" onclick="myFunction()" id="cancelButton" class="btn btn-success pull-right">Click to accept application.</button>
+                    <button type="button" onclick="myFunction()" id="cancelButton" class="btn btn-danger pull-right">Click to reject application.</button>
+                    <script>
+                        function myFunction() {
+                            confirm("Are you sure you want to permanently cancel/remove this application?");
+                        }
+                    </script>
+                </h4>
+            </div>
+            <div id="collapse5" class="panel-collapse collapse in">
+                <div class="panel-body">...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...</div>
+                <div id="pending" class="panel-footer"><button type="submit" class="btn btn-default">Click here to view this students information</button></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="footer">
+        <p><i>Random footer information<br />
+            contacts, address,<br />
+            disclaimer and other footer information ...etc.
+        </i></p>
+    </div>
+
+</div>
+
+
+
+</body>
+</html>

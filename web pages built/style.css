@@ -1,0 +1,30 @@
+#footer{
+    border-top: solid gray 3px;
+    text-align: center;
+    margin-left: -60px;
+    margin-right: -60px;
+    padding-top: 10px;
+}
+#imgRow{
+    margin-bottom: 20px;
+}
+.panel-heading{
+    text-align: center;
+}
+#pending{
+    background-color: coral;
+}
+#accepted{
+    background-color: greenyellow;
+}
+#rejected{
+    background-color: #CD5555;
+}
+
+
+.panel-footer{
+    text-align: center;
+}
+ul{
+    align: center;
+}

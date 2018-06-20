@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style>
+        #pending{
+            background-color: coral;
+        }
+        #accepted{
+            background-color: greenyellow;
+        }
+        #rejected{
+            background-color: #CD5555;
+        }
+        #footer{
+            border-top: solid gray 3px;
+            text-align: center;
+            margin-left: -60px;
+            margin-right: -60px;
+            padding-top: 10px;
+        }
+    </style>
+    <title>New Account</title>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand">Summer School Student Information System</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#">Apply To Summer School</a></li>
+            <li><a href="#">View Your Applications</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-edit"></span> Edit Your Profile Details</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Logged in as Paul Jones</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <h1 style="text-align: center;">Your Accepted, Well Done!<br /> <small>Enter your passport information and payment details for our records and your reference.</small></h1>
+    <br />
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div style="text-align: center;" class="panel-heading">
+                    <h2>You are paying for:</h2><h3><br /><strong>School: </strong>Redwood Summer School <strong>Price: </strong> $170.00 <strong>Deadline to Accept and Pay: </strong> 19/04/2016</h3>
+                </div>
+            </div>
+        </div>
+    <hr />
+    <div class="row">
+        <div class="col-md-6">
+            <form role="form">
+                <div class="form-group">
+                    <label>Passport Number*:</label>
+                    <input type="text" class="form-control" id="usr">
+                </div>
+                <div class="form-group">
+                    <label>Year of Passport Issue*:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="form-group">
+                    <label>Country of Passport Issue*:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <form role="form">
+                <div class="form-group">
+                    <div class="form-group">
+                        <label for="sel1">Payment Method* (select one):</label>
+                        <select class="form-control" id="sel1">
+                            <option>Visa</option>
+                            <option>Visa Debit</option>
+                            <option>Master Card</option>
+                            <option>American Express</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Personal Notes About Payment:</label>
+                    <textarea class="form-control" rows="4" id="comment"></textarea>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div style="text-align: center;margin-bottom: 20px;" class="row">
+        <button type="button" class="btn btn-primary">Submit Passport Details and Pay</button>
+    </div>
+
+
+    <div class="row" id="footer">
+        <p><i>Random footer information<br />
+            contacts, address,<br />
+            disclaimer and other footer information ...etc.
+        </i></p>
+    </div>
+
+</div>
+
+
+
+</body>
+</html>

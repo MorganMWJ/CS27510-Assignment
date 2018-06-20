@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style>
+        #pending{
+            background-color: coral;
+        }
+        #accepted{
+            background-color: greenyellow;
+        }
+        #rejected{
+            background-color: #CD5555;
+        }
+        #footer{
+            border-top: solid gray 3px;
+            text-align: center;
+            margin-left: -60px;
+            margin-right: -60px;
+            padding-top: 10px;
+        }
+    </style>
+    <title>Applications</title>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand">Summer School Student Information System</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#">Apply To Summer School</a></li>
+            <li><a href="#">View Your Applications</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-edit"></span> Edit Your Profile Details</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Logged in as Paul Jones</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <h1 style="text-align: center;">Your Applications<br /> <small>This page displays your current summer camp applications.<br /> <a>See previous payment transactions here.</a></small></h1>
+    <br />
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading" id="pending">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Redwood Summer School <strong>Status: </strong> Pending    </a>
+                    <button type="button" class="btn btn-link"><strong>-</strong></button>
+                    <button type="button" onclick="myFunction()" id="cancelButton" class="btn btn-primary pull-right">Click to remove/cancel application.</button>
+                    <script>
+                        function myFunction() {
+                            confirm("Are you sure you want to permanently cancel/remove this application?");
+                        }
+                    </script>
+                </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse in">
+                <div class="panel-body">...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...</div>
+                <div id="pending" class="panel-footer"><strong>Cost:</strong> $150.00  <strong>Deadline to Accept: </strong> 19/4/2016</div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" id="accepted">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Perl Lagoon Summer School <strong>Status: </strong> Accepted</a>
+                    <button type="button" class="btn btn-link"><strong>Click here to provide extra information, pay and confirm attendance.</strong></button>
+                    <button type="button" onclick="myFunction()" id="cancelButton" class="btn btn-primary  pull-right">Click to remove/cancel application.</button>
+                </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...</div>
+                <div id="accepted" class="panel-footer"><strong>Cost:</strong> $150.00  <strong>Deadline to Accept: </strong> 19/4/2016</div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" id="pending">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Tall Trees Summer School <strong>Status: </strong> Pending     </a>
+                    <button type="button" class="btn btn-link"><strong>-</strong></button>
+                    <button type="button" onclick="myFunction()" id="cancelButton" class="btn btn-primary  pull-right">Click to remove/cancel application.</button>
+                </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...</div>
+                <div id="pending" class="panel-footer"><strong>Cost:</strong> $150.00  <strong>Deadline to Accept: </strong> 19/4/2016</div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" id="rejected">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Waterside Summer School <strong>Status: </strong> Declined     </a>
+                    <button type="button" class="btn btn-link"><strong>-</strong></button>
+                    <button type="button" onclick="myFunction()" id="cancelButton" class="btn btn-primary  pull-right">Click to remove/cancel application.</button>
+                </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...
+                    ...APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE......APPLICATION TEXT HERE...</div>
+                <div id="rejected" class="panel-footer"><strong>Cost:</strong> $170.00  <strong>Deadline to Accept: </strong> 19/4/2016</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="footer">
+        <p><i>Random footer information<br />
+            contacts, address,<br />
+            disclaimer and other footer information ...etc.
+        </i></p>
+    </div>
+
+</div>
+
+
+
+</body>
+</html>

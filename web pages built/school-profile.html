@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style>
+        #pending{
+            background-color: coral;
+        }
+        #accepted{
+            background-color: greenyellow;
+        }
+        #rejected{
+            background-color: #CD5555;
+        }
+        #footer{
+            border-top: solid gray 3px;
+            text-align: center;
+            margin-left: -60px;
+            margin-right: -60px;
+            padding-top: 10px;
+        }
+    </style>
+    <title>School Profile</title>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand">Summer School Student Information System</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#">View Your Schools Applications</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-edit"></span> Edit Your School Details</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Logged in as Leader: user23</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <h1 style="text-align: center;">Edit Your Schools Information<br /> <small>Change the information seen on this site by potential applicants.</small></h1>
+    <br />
+
+    <div style="text-align: center;" class="row">
+        <div class="col-md-12">
+            <div class="well well-lg"><h2>Redwood Summer School</h2></div>
+        </div>
+    </div>
+
+    <form role="form">
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>Cost of Course*:</label>
+                    <input type="text" class="form-control" id="pwd">
+                </div>
+                <div class="form-group">
+                    <label>Application Closing Date*:</label>
+                    <input type="date" class="form-control" id="pwd">
+                </div>
+                <div class="form-group">
+                    <label>Days to respond once accepted*:</label>
+                    <input type="date" class="form-control" id="pwd">
+                </div>
+                <button type="button" class="btn btn-primary">Save Details</button>
+            </div>
+
+            <div class="col-md-8">
+                <div class="form-group">
+                    <label for="comment">School/Course Short Description*:</label>
+                    <textarea class="form-control" rows="10" id="comment"></textarea>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="row" id="footer">
+        <p><i>Random footer information<br />
+            contacts, address,<br />
+            disclaimer and other footer information ...etc.
+        </i></p>
+    </div>
+
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+\BOOKMARK [1][-]{section.1}{INTRODUCTION}{}% 1
+\BOOKMARK [1][-]{section.2}{FUNCTIONAL REQUIREMENTS}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Interface requirements}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Business requirements}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Security requirements}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{METHODS}{}% 6
+\BOOKMARK [1][-]{section.4}{RESULTS}{}% 7
+\BOOKMARK [2][-]{subsection.4.1}{Front end design}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.2}{Database design}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.3}{RDBMS and front end design platform}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.4}{Security}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.5}{Maintenance and disaster recovery}{section.4}% 12
+\BOOKMARK [3][-]{subsubsection.4.5.1}{Maintenance}{subsection.4.5}% 13
+\BOOKMARK [3][-]{subsubsection.4.5.2}{Disaster recovery}{subsection.4.5}% 14
+\BOOKMARK [1][-]{section.5}{DISCUSSION}{}% 15
+\BOOKMARK [1][-]{section.6}{CONCLUSION}{}% 16
+\BOOKMARK [1][-]{section.7}{APPENDICES}{}% 17
+\BOOKMARK [2][-]{subsection.Alph0.1}{Front end design}{section.7}% 18
+\BOOKMARK [2][-]{subsection.Alph0.2}{Database design}{section.7}% 19

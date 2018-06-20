@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Homepage</title>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<style>
+			#footer{
+				border-top: solid gray 3px;
+				text-align: center;
+				margin-left: -60px;
+				margin-right: -60px;
+				padding-top: 10px;
+			}
+			#imgRow{
+				margin-bottom: 20px;
+			}
+			.panel-heading{
+				text-align: center;
+			}
+
+
+		</style>
+	</head>
+	<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand">Summer School Student Information System</a>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><span class="glyphicon glyphicon-user"></span> Create New Account</a></li>
+				<li><a href="#" title="Login" data-toggle="popover" data-placement="left"  data-content="" ><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			</ul>
+			<div id="popover-head" class="hide">
+				Login
+			</div>
+			<div id="popover-content" class="hide">
+				<form>
+					<div class="form-group">
+						<label for="email">Username:</label>
+						<input type="text" class="form-control" name="username" placeholder="Username" required autofocus>
+					</div>
+					<div class="form-group">
+						<label for="pwd">Password:</label>
+						<input type="password" class="form-control" name="pwd" placeholder="Password">
+					</div>
+					<div class="form-group">
+						<label><input type="checkbox" id="cbox1" value="first_checkbox"> Log in as Leader</label><br>
+						<button type="submit" class="btn btn-default" name="login">Login</button>
+					</div>
+				</form>
+				<a>Forgotten your password?</a>
+			</div>
+			<script>
+				$('[data-toggle="popover"]').popover({
+					html : true,
+					title: function() {
+						return $("#popover-head").html();
+					},
+					content: function() {
+						return $("#popover-content").html();
+					}
+				});
+			</script>
+		</div>
+	</nav>
+
+	<h1 style="text-align: center;">Homepage<br /> <small>See the world through summer school.</small></h1>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3>About Us</h3>
+					</div>
+
+					<div class="panel-body">
+						<div class="mainText">
+							<p>
+								In alteration insipidity impression by travelling reasonable up motionless. Of regard warmth by unable sudden garden ladies.
+								No kept hung am size spot no. Likewise led and dissuade rejoiced welcomed husbands boy. Do listening on he suspected resembled.
+								Water would still if to. Position boy required law moderate was may.
+							</p>
+							<p>
+								Whole every miles as tiled at seven or. Wished he entire esteem mr oh by.
+								Possible bed you pleasure civility boy elegance ham. He prevent request by if in pleased.
+								Picture too and concern has was comfort. Ten difficult resembled eagerness nor. Same park bore on be.
+								Warmth his law design say are person. Pronounce suspected in belonging conveying ye repulsive.
+							</p>
+							<p>
+								So insisted received is occasion advanced honoured. Among ready to which up. Attacks smiling and may out assured moments man nothing outward. Thrown any behind afford either the set depend one temper.
+								Instrument melancholy in acceptance collecting frequently be if.
+								Zealously now pronounce existence add you instantly say offending.
+								Merry their far had widen was. Concerns no in expenses raillery formerly.
+							</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="imgRow" class="row">
+			<div class="col-md-4">
+				<img src="s1.jpg" class="img-rounded" alt="Cinque Terre">
+			</div>
+			<div class="col-md-4">
+				<img src="s2.jpg" class="img-rounded" alt="Cinque Terre">
+			</div>
+			<div class="col-md-4">
+				<img src="s3.jpg" class="img-rounded" alt="Cinque Terre">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-8">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3>How to use the site</h3>
+					</div>
+
+					<div class="panel-body">
+						<p>
+							So insisted received is occasion advanced honoured. Among ready to which up. Attacks smiling and may out assured moments man nothing outward. Thrown any behind afford either the set depend one temper.
+							Instrument melancholy in acceptance collecting frequently be if.
+							Zealously now pronounce existence add you instantly say offending.
+							Merry their far had widen was. Concerns no in expenses raillery formerly.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3>Contact Us</h3>
+					</div>
+
+					<div class="panel-body">
+						<p style="text-align: center">Contact details<br />Contact Details<br />Contact details<br />Contact Details<br /></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row" id="footer">
+			<p><i>Random footer information<br />
+				contacts, address,<br />
+				disclaimer and other footer information ...etc.
+			</i></p>
+		</div>
+	</div>
+
+		</div>
+	</body>
+</html>
+

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style>
+        #pending{
+            background-color: coral;
+        }
+        #accepted{
+            background-color: greenyellow;
+        }
+        #rejected{
+            background-color: #CD5555;
+        }
+        #footer{
+            border-top: solid gray 3px;
+            text-align: center;
+            margin-left: -60px;
+            margin-right: -60px;
+            padding-top: 10px;
+        }
+    </style>
+    <title>Profile</title>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand">Summer School Student Information System</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#">Apply To Summer School</a></li>
+            <li><a href="#">View Your Applications</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-edit"></span> Edit Your Profile Details</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Logged in as Paul Jones</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <h1 style="text-align: center;">Edit Your Profile<br /> <small>Keep your personal information up to date by editing the form below.</small></h1>
+    <br />
+
+    <div class="alert alert-success">
+        <strong>Information Successfully Updated!</strong> Your new information has been saved on our database.
+    </div>
+
+    <form role="form">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="form-group">
+                    <label>Forname*:</label>
+                    <input type="text" placeholder="Paul" class="form-control" id="usr">
+                </div>
+                <div class="form-group">
+                    <label>Middle name(s):</label>
+                    <input type="text" placeholder="Seymour" class="form-control" id="pwd">
+                </div>
+                <div class="form-group">
+                    <label>Surname*:</label>
+                    <input type="text" placeholder="Jones" class="form-control" id="pwd">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>Date Of Birth*:</label>
+                    <input type="date" placeholder="25/07/1995" class="form-control" id="pwd">
+                </div>
+                <div class="form-group">
+                    <label>Email*:</label>
+                    <input type="email" placeholder="paul@hotmail.com" class="form-control" id="pwd">
+                </div>
+                <div class="form-group">
+                    <label>Phone*:</label>
+                    <input type="text" placeholder="07462856321" class="form-control" id="pwd">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>Address line 1*:</label>
+                    <input type="text" placeholder="50 Grayson Way" class="form-control" id="pwd">
+                </div>
+                <div class="form-group">
+                    <label>Address line 2*:</label>
+                    <input type="text" placeholder="Llantarnam" class="form-control" id="pwd">
+                </div>
+                <div class="form-group">
+                    <label>City/Town*:</label>
+                    <input type="text" placeholder="Northport" class="form-control" id="pwd">
+                </div>
+                <div class="form-group">
+                    <label>County*:</label>
+                    <input type="text" placeholder="Torfaen" class="form-control" id="pwd">
+                </div>
+                <div class="form-group">
+                    <label>Country*:</label>
+                    <input type="text" placeholder="United Kingdom" class="form-control" id="pwd">
+                </div>
+                <div class="form-group" >
+                    <label>Post-code*:</label>
+                    <input type="text" placeholder="ST24 7AY" class="form-control" id="pwd">
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="form-group">
+                    <label for="comment">Health Requirements:</label>
+                    <textarea class="form-control" rows="7" id="comment"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Dietary Requirements:</label>
+                    <textarea class="form-control" rows="7" id="comment"></textarea>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div style="text-align: center;margin-bottom: 20px;" class="row">
+        <div class="form-group">
+            <label>Male</label> <input type="radio" name="gender" value="male" checked><br>
+            <label>Female</label> <input type="radio" name="gender" value="female"><br>
+        </div>
+        <button type="submit" class="btn btn-primary">Save These Details</button>
+    </div>
+
+    <div class="row" id="footer">
+        <p><i>Random footer information<br />
+            contacts, address,<br />
+            disclaimer and other footer information ...etc.
+        </i></p>
+    </div>
+
+</div>
+
+
+
+</body>
+</html>

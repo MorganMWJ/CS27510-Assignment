@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style>
+        #pending{
+            background-color: coral;
+        }
+        #accepted{
+            background-color: greenyellow;
+        }
+        #rejected{
+            background-color: #CD5555;
+        }
+        #footer{
+            border-top: solid gray 3px;
+            text-align: center;
+            margin-left: -60px;
+            margin-right: -60px;
+            padding-top: 10px;
+        }
+    </style>
+    <title>New Account</title>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand">Summer School Student Information System</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#">Apply To Summer School</a></li>
+            <li><a href="#">View Your Applications</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-edit"></span> Edit Your Profile Details</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Logged in as Paul Jones</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <h1 style="text-align: center;">Write Your Application<br /> <small>Write and submit an application to your chosen summer school below.</small></h1>
+    <br />
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3><strong>School: </strong>Redwood Summer School <strong>Price: </strong> $170.00 <strong>Deadline to Apply: </strong> 05/04/2016</h3>
+                </div>
+
+                <div class="panel-body">
+                    <div class="mainText">
+                        <p>
+                            In alteration insipidity impression by travelling reasonable up motionless. Of regard warmth by unable sudden garden ladies.
+                            No kept hung am size spot no. Likewise led and dissuade rejoiced welcomed husbands boy. Do listening on he suspected resembled.
+                            Water would still if to. Position boy required law moderate was may.
+                        </p>
+                        <p>
+                            Whole every miles as tiled at seven or. Wished he entire esteem mr oh by.
+                            Possible bed you pleasure civility boy elegance ham. He prevent request by if in pleased.
+                            Picture too and concern has was comfort. Ten difficult resembled eagerness nor. Same park bore on be.
+                            Warmth his law design say are person. Pronounce suspected in belonging conveying ye repulsive.
+                        </p>
+                        <p>
+                            So insisted received is occasion advanced honoured. Among ready to which up. Attacks smiling and may out assured moments man nothing outward. Thrown any behind afford either the set depend one temper.
+                            Instrument melancholy in acceptance collecting frequently be if.
+                            Zealously now pronounce existence add you instantly say offending.
+                            Merry their far had widen was. Concerns no in expenses raillery formerly.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="comment">Write Application:</label>
+                <textarea class="form-control" rows="15" id="comment"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: center;margin-bottom: 10px;" class="row">
+        <button type="button" class="btn btn-primary">Submit Application</button>
+        <script>
+            function myFunc(){
+                confirm("Are you sure you want to send this application? (Once sent you will not be able to edit it)");
+            }
+        </script>
+    </div>
+
+
+    <div class="row" id="footer">
+        <p><i>Random footer information<br />
+            contacts, address,<br />
+            disclaimer and other footer information ...etc.
+        </i></p>
+    </div>
+
+</div>
+
+
+
+</body>
+</html>
